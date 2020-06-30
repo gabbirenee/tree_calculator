@@ -1,0 +1,41 @@
+project (Tree) {
+    exename = tree
+
+    Source_Files{
+        Add_Node.cpp
+        Binary_Op_Node.cpp
+        Divide_Node.cpp
+        Driver.cpp
+        Eval_Visitor.cpp
+        Expr_Tree_Builder.cpp
+        Modulus_Node.cpp
+        Multiply_Node.cpp
+        Num_Node.cpp
+        Subtract_Node.cpp
+    }
+
+    Template_Files{
+        Base_Array.cpp
+        Array.cpp
+        Stack.cpp
+    }
+
+    Header_Files{
+        Add_Node.h
+        Binary_Op_Node.h
+        Divide_Node.h
+        Eval_Visitor.h
+        Expr_Builder.h
+        Expr_Node.h
+        Expr_Tree_Builder.h
+        Modulus_Node.h
+        Multiply_Node.h
+        Num_Node.h
+        Subtract_Node.h
+        Visitor.h
+    }
+
+    specific (make){
+        compile_flags += -std=c++11
+    }
+}
